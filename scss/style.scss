@@ -1,0 +1,85 @@
+@forward 'globals';
+@import 'variables';
+
+body{
+    background-color: $DarkBlue;
+    padding: 20px;
+
+    .container{
+        text-align: center;
+        background-color: $DarkGrayishBlue;
+        margin: 6.5rem auto;
+        border-radius: 0.625rem;
+        max-width: 20.9375rem;
+
+        &_upper{
+            color: $NeonGreen;
+            font-size: 0.75rem;
+            letter-spacing: 0.125rem;
+            padding: 2.5rem 1.875rem 1.25rem 1.875rem;
+
+            p{
+                padding-bottom: 1.25rem;
+            }
+            #advice{
+                color: $LightCyan;
+                font-size: 1.75rem;
+                letter-spacing: 0rem;
+            }
+        }
+
+        &_lower{
+            position: relative;
+            background-image: url('../images/pattern-divider-mobile.svg');
+            background-repeat: no-repeat;
+            background-position: center top;
+            height: 75px;
+
+            #dice{
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 3.75rem;
+                height: 3.75rem;
+                left: 50%;
+                bottom: -40%;
+                transform: translateX(-50%);
+                border-radius: 50%;
+                background-color: $NeonGreen;
+                cursor: pointer;
+
+                &:hover{
+                    box-shadow: 0rem 0rem 2rem $NeonGreen;
+                }
+            }
+        }
+    }
+
+    footer{
+        margin-top: 13rem;
+
+        p{
+            font-size: 14px;
+            text-align: center;
+            color: $LightCyan;
+
+            a{
+                color: $NeonGreen;
+            }
+        }
+    }
+}
+@media (min-width: 37.5rem){
+    body{
+    
+        .container{
+            margin-top: 13rem;
+            max-width: 31.25rem;
+
+            &_lower{
+                background-image: url('../images/pattern-divider-desktop.svg');
+            }
+        }
+    }
+}

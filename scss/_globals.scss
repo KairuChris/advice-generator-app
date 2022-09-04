@@ -1,0 +1,18 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 1.75rem;
+    font-family: 'Manrope', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    a,a:visited{
+        text-decoration: none;
+    }
+}
