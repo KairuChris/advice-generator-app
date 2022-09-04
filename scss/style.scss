@@ -3,7 +3,7 @@
 
 body{
     background-color: $DarkBlue;
-    padding: 20px;
+    padding: 1.25rem;
 
     .container{
         text-align: center;
@@ -16,14 +16,14 @@ body{
             color: $NeonGreen;
             font-size: 0.75rem;
             letter-spacing: 0.125rem;
-            padding: 2.5rem 1.875rem 1.25rem 1.875rem;
+            padding: 2.5rem 1.25rem 1.25rem 1.25rem;
 
             p{
                 padding-bottom: 1.25rem;
             }
             #advice{
                 color: $LightCyan;
-                font-size: 1.75rem;
+                font-size: 1.45rem;
                 letter-spacing: 0rem;
             }
         }
@@ -60,7 +60,7 @@ body{
         margin-top: 13rem;
 
         p{
-            font-size: 14px;
+            font-size: 0.875rem;
             text-align: center;
             color: $LightCyan;
 
@@ -70,12 +70,21 @@ body{
         }
     }
 }
-@media (min-width: 37.5rem){
+@media (min-width: 37.5em){
     body{
     
         .container{
-            margin-top: 13rem;
-            max-width: 31.25rem;
+            margin-top: 12rem;
+            max-width: 32.25rem;
+
+            &_upper{
+                padding-left: 30px;
+                padding-right: 30px;
+
+                #advice{
+                    font-size: 1.75rem;
+                }
+            }
 
             &_lower{
                 background-image: url('../images/pattern-divider-desktop.svg');

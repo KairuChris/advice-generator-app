@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repository](https://github.com/KairuChris/advice-generator-app)
-- Live Site URL: [Github Pages]()
+- Live Site URL: [Github Pages](https://kairuchris.github.io/advice-generator-app/)
 
 ## My process
 
